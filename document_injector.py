@@ -14,8 +14,5 @@ class DocumentInjector(Injector):
     def process_file(self, path):
         return '{}'.format(self.config['sub_folder'])
 
-    def get_extensions(self):
-        return self.types_vector['types']
-
     def is_alive(self):
         print(self.types_vector)

@@ -11,8 +11,7 @@ class Injector():
         '''
         returns all extensions supported by the class
         '''
-
-        raise NotImplementedError()
+        return self.types_vector['types']
 
     def process(self, path):
         '''
@@ -25,4 +24,7 @@ class Injector():
             raise NotImplementedError()
 
     def process_file(self, path):
+        """
+        This method should return the path under the base folder where the file should be moved to.
+        """
         raise NotImplementedError()

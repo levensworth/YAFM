@@ -59,5 +59,8 @@ if __name__ == '__main__':
                 time.sleep(10)
         except KeyboardInterrupt as e:
             observer.stop()
+            exit()
+        except Exception as e:
+            observer.stop()
 
     observer.join()
