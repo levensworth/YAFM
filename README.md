@@ -1,4 +1,4 @@
-# Simple Download organizer
+# Yet Another File Manager
 If you have a mac, your Donwloads folder is a mess.
 This script comes to save you.
 This module was intended to be an extensible implementation for anyone to introduce changes on runtime
