@@ -27,5 +27,6 @@ Please be kind, this is a side project. If you have any suggestions or want to c
 
 ## Depdenceies:
 - python3
+- virtualenv
 
 email: sanitago.bassani96@gmail.com
