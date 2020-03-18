@@ -13,7 +13,7 @@ This module was intended to be an extensible implementation for anyone to introd
 ## How to handle new extensions?
 If you want to make a new handler for an extension which is currently not implemented or just pourly handle you can!
 YAFM was build with extension as a core principle. 
-1. Create a new python file inside the module (eg: `example_handler.py`).
+1. Create a new python file inside the module `apps` (eg: `example_handler.py`).
 2. Create your handler class, be sure to extend `Injector`. For that, `from injector import Injector`
 3. Your newly created handler must implement `process_file(self, path)` which must return a string representing the sub path under `DESTINATION_FOLDER` where the file should be moved to.
 4. In `settings.py` inside the `APPS = [...]` include a new row as `{'app': 'example_handler', 'config': {'sub_folder': 'Example', 'types': ['pdf']}}`
