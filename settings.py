@@ -6,6 +6,7 @@ and date
 SOURCE_FOLDER_PATH = '/Users/santiagobassani/Downloads'
 DESTINATION_FOLDER = '/Users/santiagobassani/Downloads-Curated'
 
+# deprecated
 TYPED_FOLDERS = [
     {'sub_folder': 'Image', 'types': ['png', 'jpeg', 'jpg']},
     {'sub_folder':'Excel', 'types': ['xslx', 'csv', 'tsv', 'dat', 'data']},
@@ -15,6 +16,8 @@ TYPED_FOLDERS = [
 ]
 
 DEFAULT_FOLDER = 'Default'
+
+APPS_BASE_PATH = 'apps'
 
 APPS = [
     {'app': 'document_injector', 'config': {'sub_folder': 'Documentas', 'types': ['txt', 'docx']}},

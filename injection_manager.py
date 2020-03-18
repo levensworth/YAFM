@@ -22,7 +22,7 @@ class InjectionManager():
             path = app['app']
             try:
                 # https://stackoverflow.com/questions/49434118/python-how-to-create-a-class-object-using-importlib
-                mod = importlib.import_module(path)
+                mod = importlib.import_module('{}.{}'.format(settings.APPS_BASE_PATH, path),)
 
                 module_classes = inspect.getmembers(mod, inspect.isclass)
                 for class_implementation in module_classes:
