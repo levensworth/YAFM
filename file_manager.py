@@ -23,7 +23,7 @@ class FileHandler(FileSystemEventHandler):
             src = '{}/{}'.format(SOURCE_FOLDER_PATH, file_name)
             move = True
             try:
-                file_type = file_name.split('.')[1]
+                file_type = file_name.split('.')[-1]
                 injector = self.dependency_manager.get_injector(file_type)
                 sub_folder = injector.process(src)
                 os.mkdir('{}/{}'.format(DESTINATION_FOLDER, sub_folder))
@@ -36,8 +36,11 @@ class FileHandler(FileSystemEventHandler):
                 move = False
             except FileExistsError:
                 pass
-            except Exception as e:
-                self.logger.warning('destination folder does not exists')
+            except FileNotFoundError:
+                # mkdir failed
+                self.logger.error('destination folder does not exists')
+            except Exception:
+                self.logger.warning('something went wrong, please go to the repo and tell us about it')
 
             if move:
                 new_src = '{}/{}/{}'.format(DESTINATION_FOLDER, sub_folder, file_name)

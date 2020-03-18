@@ -1,5 +1,5 @@
 echo 'Installing virtualenv'
-pip install virtualenv
+pip3 install virtualenv
 echo 'creating a venv'
 virtualenv -p python3.7 venv
 echo 'activating venv'

@@ -3,8 +3,8 @@ This script let's you organise your downloads folder into a separate folder with
 and date
 """
 
-SOURCE_FOLDER_PATH = '/Users/santiagobassani/Downloads'
-DESTINATION_FOLDER = '/Users/santiagobassani/Downloads-Curated'
+SOURCE_FOLDER_PATH = '/Users/sbassani/Downloads'
+DESTINATION_FOLDER = '/Users/sbassani/Downloads-Curated'
 
 # deprecated
 TYPED_FOLDERS = [
@@ -20,6 +20,8 @@ DEFAULT_FOLDER = 'Default'
 APPS_BASE_PATH = 'apps'
 
 APPS = [
-    {'app': 'document_injector', 'config': {'sub_folder': 'Documentas', 'types': ['txt', 'docx']}},
-    {'app': 'pdf_injector', 'config': {'sub_folder': 'PDF', 'types': ['pdf']}}
+    {'app': 'document_injector', 'config': {'sub_folder': 'Documents', 'types': ['txt', 'docx']}},
+    {'app': 'pdf_injector', 'config': {'sub_folder': 'PDF', 'types': ['pdf']}},
+    {'app': 'excel_injector', 'config': {'sub_folder': 'SpreadSheets', 'types': ['xlsx', 'xls', 'csv', 'tsv','data']}},
+    {'app': 'zip_injector', 'config': {'sub_folder': 'CompressedFiles', 'types': ['zip', 'tar']}},
 ]
