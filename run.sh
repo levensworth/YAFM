@@ -7,4 +7,4 @@ echo 'activating venv'
 echo 'installing requirements.txt'
 pip install -r requirements.txt
 echo 'start listener ...'
-python file-manager.py
+python file_manager.py
