@@ -24,4 +24,5 @@ APPS = [
     {'app': 'pdf_injector', 'config': {'sub_folder': 'PDF', 'types': ['pdf']}},
     {'app': 'excel_injector', 'config': {'sub_folder': 'SpreadSheets', 'types': ['xlsx', 'xls', 'csv', 'tsv','data']}},
     {'app': 'zip_injector', 'config': {'sub_folder': 'CompressedFiles', 'types': ['zip', 'tar']}},
+    {'app': 'photo_injector', 'config': {'sub_folder': 'Image', 'types': ['png', 'jpeg', 'jpg']}}
 ]
