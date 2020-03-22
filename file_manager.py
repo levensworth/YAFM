@@ -51,19 +51,28 @@ if __name__ == '__main__':
     while True:
         try:
             # start dependency manager
+            print('creating dependency manager...')
             dependency_manager = InjectionManager(settings.APPS, logging)
             # start event handler and inject dp_manager
+            print('created event handler...')
             event_handler = FileHandler(logging, dependency_manager)
             # watchdog_observer
             observer = Observer()
+            print('observer created')
             observer.schedule(event_handler, SOURCE_FOLDER_PATH, recursive=True)
             observer.start()
+            print('watching for any changes ... ')
             while True:
                 time.sleep(10)
-        except KeyboardInterrupt as e:
+        except KeyboardInterrupt:
             observer.stop()
+            exit()
+        except FileNotFoundError as e:
+            observer.stop()
+            logging.error('{}'.format(e))
             exit()
         except Exception as e:
             observer.stop()
+
 
     observer.join()

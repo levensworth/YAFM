@@ -1,8 +1,9 @@
 import os
 
 class Injector():
-    def __init__(self, config=None):
+    def __init__(self, logger, config=None):
         self.config = config if config is not None else {'sub_folder': 'Default', 'types': []}
+        self.logger = logger
 
     def is_alive(self):
         print('i"m alive!')

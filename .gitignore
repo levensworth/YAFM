@@ -2,3 +2,5 @@
 /.vscode
 **/__pycache__
 /workspace.xml
+test.py
+*.pyc

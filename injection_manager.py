@@ -29,7 +29,7 @@ class InjectionManager():
                     if not is_injector(class_implementation[1]):
                         module_classes.remove(class_implementation)
                 instance = module_classes[0][1]
-                instance = instance(app['config'])
+                instance = instance(self.logger, app['config'])
                 self.injectors.append(instance)
 
             except  ImportError:

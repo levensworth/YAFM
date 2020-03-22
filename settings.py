@@ -3,8 +3,8 @@ This script let's you organise your downloads folder into a separate folder with
 and date
 """
 
-SOURCE_FOLDER_PATH = '/Users/sbassani/Downloads'
-DESTINATION_FOLDER = '/Users/sbassani/Downloads-Curated'
+SOURCE_FOLDER_PATH = '/Users/santiagobassani/Downloads'
+DESTINATION_FOLDER = '/Users/santiagobassani/Downloads-Curated'
 
 # deprecated
 TYPED_FOLDERS = [
@@ -20,9 +20,13 @@ DEFAULT_FOLDER = 'Default'
 APPS_BASE_PATH = 'apps'
 
 APPS = [
-    {'app': 'document_injector', 'config': {'sub_folder': 'Documents', 'types': ['txt', 'docx']}},
-    {'app': 'pdf_injector', 'config': {'sub_folder': 'PDF', 'types': ['pdf']}},
-    {'app': 'excel_injector', 'config': {'sub_folder': 'SpreadSheets', 'types': ['xlsx', 'xls', 'csv', 'tsv','data']}},
-    {'app': 'zip_injector', 'config': {'sub_folder': 'CompressedFiles', 'types': ['zip', 'tar']}},
-    {'app': 'photo_injector', 'config': {'sub_folder': 'Image', 'types': ['png', 'jpeg', 'jpg']}}
+    {'app': 'default_injector', 'config': {'sub_folder': 'Documents', 'types': ['txt', 'docx']}},
+    {'app': 'default_injector', 'config': {'sub_folder': 'PDF', 'types': ['pdf']}},
+    {'app': 'default_injector', 'config': {'sub_folder': 'SpreadSheets', 'types': ['xlsx', 'xls', 'csv', 'tsv','data']}},
+    {'app': 'default_injector', 'config': {'sub_folder': 'CompressedFiles', 'types': ['zip', 'tar']}},
+    {'app': 'default_injector', 'config': {'sub_folder': 'Apss', 'types': ['dmg', 'exe']}},
+    {'app': 'default_injector', 'config': {'sub_folder': 'Programming', 'types': ['py', 'java', 'js', 'kt', 'sh', 'html']}},
+    {'app': 'default_injector', 'config': {'sub_folder': 'Desgin', 'types': ['svg', 'ps']}},
+    # This is an example use case. Please update path to match your desire folder
+    {'app': 'photo_injector', 'config': {'sub_folder': 'Image', 'known_path': '/Users/santiagobassani/Desktop/weekend-projects/YAFM/know' ,'types': ['png', 'jpeg', 'jpg']}}
 ]
