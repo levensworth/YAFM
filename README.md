@@ -28,6 +28,7 @@ YAFM was build with extension as a core principle.
     - For this injector to work you'll specify a folder path in `known_path` containing one image for each person you want to 
         classify. Each photo should contain the person's face looking forward (please, this is crucial for performance and accuracy). The name of each photo will be used to create each folder inside the `DESTINATION_FOLDER`.
 
+![Alt Text](https://media.giphy.com/media/YprI6ln19TSWHDzgol/giphy.gif)
 ## Work of art in progress.
 Please be kind, this is a side project. If you have any suggestions or want to contribute, i encurage you to do so!.
 
