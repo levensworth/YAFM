@@ -21,7 +21,6 @@ YAFM was build with extension as a core principle.
     - The  `'sub_folder'` attribute reference the Subfolder to be generated under the  `DESTINATION_FOLDER `. This will be consider the base direction for any file given to this handler, but inside you can just go as deep as you want!
     - The `'types'` attribute represents an array of all accepted types for this module. Make sure no two apps clash with the types they accept as we cannot asure you which one will process each file.
 
-[NEW]:
 5. Now you can use `PhotoInjector` for image classification of your downloads.
     - Inside `settings.py` you'll add an entry for `APPS = [...]`.
     - The new entry should look like this:
