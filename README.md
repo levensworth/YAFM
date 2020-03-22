@@ -21,6 +21,13 @@ YAFM was build with extension as a core principle.
     - The  `'sub_folder'` attribute reference the Subfolder to be generated under the  `DESTINATION_FOLDER `. This will be consider the base direction for any file given to this handler, but inside you can just go as deep as you want!
     - The `'types'` attribute represents an array of all accepted types for this module. Make sure no two apps clash with the types they accept as we cannot asure you which one will process each file.
 
+[NEW]:
+5. Now you can use `PhotoInjector` for image classification of your downloads.
+    - Inside `settings.py` you'll add an entry for `APPS = [...]`.
+    - The new entry should look like this:
+        `{'app': 'photo_injector', 'config': {'sub_folder': 'Image', 'known_path': 'path/to/folder' ,'types': ['png', 'jpeg', 'jpg']}}`
+    - For this injector to work you'll specify a folder path in `known_path` containing one image for each person you want to 
+        classify. Each photo should contain the person's face looking forward (please, this is crucial for performance and accuracy). The name of each photo will be used to create each folder inside the `DESTINATION_FOLDER`.
 
 ## Work of art in progress.
 Please be kind, this is a side project. If you have any suggestions or want to contribute, i encurage you to do so!.
