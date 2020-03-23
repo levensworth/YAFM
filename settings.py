@@ -26,7 +26,8 @@ APPS = [
     {'app': 'default_injector', 'config': {'sub_folder': 'CompressedFiles', 'types': ['zip', 'tar']}},
     {'app': 'default_injector', 'config': {'sub_folder': 'Apss', 'types': ['dmg', 'exe']}},
     {'app': 'default_injector', 'config': {'sub_folder': 'Programming', 'types': ['py', 'java', 'js', 'kt', 'sh', 'html']}},
-    {'app': 'default_injector', 'config': {'sub_folder': 'Desgin', 'types': ['svg', 'ps']}},
+    {'app': 'default_injector', 'config': {'sub_folder': 'Desgin', 'types': ['svg', 'ps']}}
     # This is an example use case. Please update path to match your desire folder
-    {'app': 'photo_injector', 'config': {'sub_folder': 'Image', 'known_path': './known' ,'types': ['png', 'jpeg', 'jpg']}}
+    # {'app': 'photo_injector', 'config': {'sub_folder': 'Image', 'known_path': './known' ,'types': ['png', 'jpeg', 'jpg']}}
 ]
+
