@@ -6,7 +6,7 @@ import logging
 
 '''
 PhotoInjector will be the class in charge of
-Photo management.
+imporved Photo management.
 For it to work:
 '''
 

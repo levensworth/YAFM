@@ -6,10 +6,9 @@ import inspect
 from injector import Injector
 import types
 
-def is_injector(object):
-    check_subclass = issubclass(object, Injector)
-    check_class = not (object == Injector)
-    return check_subclass and check_class
+"""
+Injector dependecy manager
+"""
 
 class InjectionManager():
     def __init__(self, apps, logger):
@@ -43,8 +42,7 @@ class InjectionManager():
         raise NotImplementedError
 
 
-def main():
-    InjectionManager(settings.APPS, logging)
-
-if __name__ == '__main__':
-    main()
+def is_injector(object):
+    check_subclass = issubclass(object, Injector)
+    check_class = not (object == Injector)
+    return check_subclass and check_class

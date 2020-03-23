@@ -47,7 +47,7 @@ class FileHandler(FileSystemEventHandler):
                 os.rename(src, new_src)
 
 
-if __name__ == '__main__':
+def main():
     while True:
         try:
             # start dependency manager
@@ -76,3 +76,6 @@ if __name__ == '__main__':
 
 
     observer.join()
+
+if __name__ == '__main__':
+    main()

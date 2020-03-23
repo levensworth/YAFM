@@ -1,5 +1,9 @@
 import os
 
+"""
+Base model for any future injector
+"""
+
 class Injector():
     def __init__(self, logger, config=None):
         self.config = config if config is not None else {'sub_folder': 'Default', 'types': []}
